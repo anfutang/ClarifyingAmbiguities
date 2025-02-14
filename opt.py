@@ -32,6 +32,7 @@ def get_args():
      parser.add_argument("--maximum_retry_times",type=int,default=10,help="in case where LLM fails to output in the speicied format, retry with the same LLM parameters for a limited "
                                                                          "number of times; the last time set do_sample=False.")
      parser.add_argument("--seed",type=int,default=55)
+
      group = parser.add_argument_group('--llm_options')
      group.add_argument("--batch_size",type=int,default=2,help="batch size used for inference")
      group.add_argument("--max_new_tokens",type=int,default=1000)
@@ -43,5 +44,11 @@ def get_args():
      group = parser.add_argument_group('--gpu_options')
      group.add_argument("--gpu_partition",type=str)
      group.add_argument("--gpu_node",type=str)
+
+     group = parser.add_argument_group("--ir")
+     group.add_argument("--prebuilt_index_name",type=str,default="msmarco-passage")
+     group.add_argument("--stage",type=str,default="retrieve+rerank")
+     group.add_argument("--k",type=int,default="number of documents returned by BM25.")
+
      args = parser.parse_args()
      return args
