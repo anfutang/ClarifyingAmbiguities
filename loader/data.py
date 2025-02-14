@@ -11,8 +11,8 @@ class DataLoader:
         self.turn_id = args.turn_id
         self.mode = args.mode
         self.prompt_type = args.prompt_type
-        self.data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..','data'))
-        self.output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..','output'))
+        self.data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..','data','clarification'))
+        # self.output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..','output'))
         self.load()
 
     def load(self):
