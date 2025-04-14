@@ -1,5 +1,5 @@
 ## Clarifying Ambiguities: on the Role of Ambiguity Types in Prompting Methods for Clarification Generation
-<img src="images/atcot.png" alt="Proposed AT-CoT" width="50%"/>
+<img src="images/atcot.png" alt="Proposed AT-CoT" width="80%"/>
 
 Implementation for paper "Clarifying Ambiguities: on the Role of Ambiguity Types in Prompting Methods for Clarification Generation" (To appear at SIGIR 2025). 
 
