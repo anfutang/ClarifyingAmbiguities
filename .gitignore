@@ -5,8 +5,8 @@ logging/
 output/
 slurm_output/
 prompt/
-scorer/indexes/
-scorer/pygaggle/
+scripts/scorer/indexes/
+scripts/scorer/pygaggle/
 
 test.sh
 score_all.sh
