@@ -6,8 +6,8 @@ import pickle
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__))))
 
-dataset2indexes = {"trecweb1314":"/home/tang/pyserini/indexes/clueweb12-300k/",
-                   "qulac":"/data/tang/indexes/clueweb09-catb-500k/",
+dataset2indexes = {"trecweb1314":"INDEX_TO_TRECWEB1314",
+                   "qulac":"INDEX_TO_TRECWEB0312",
                    "trec_dl_hard":"msmarco-passage/trec-dl-hard"}
 
 logger = logging.getLogger(__name__)

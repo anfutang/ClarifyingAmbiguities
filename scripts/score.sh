@@ -1,9 +1,7 @@
 #!/bin/bash
 
-PARTITION="funky"
-NODELIST=("rodgers" "bernard" "pascal")
-# NODELIST=("cal" "pas" "sister")
-# NODELIST=("cal" "pas" "sister")
+PARTITION="PARTITION"
+NODELIST=("NODE-1" "NODE-2" "NODE-3")
 NUM_NODES=${#NODELIST[@]}
 
 DATASET_NAME=$1
@@ -20,13 +18,10 @@ if [ "$SCORE_TYPE" == "cq" ]; then
   NOISE_TYPE=1
   USER_SIMULATION_MODES=("respond")
 else
-  # USER_SIMULATION_MODES=("select" "respond")
-  USER_SIMULATION_MODES=("select" "respond" "select+respond")
-  # USER_SIMULATION_MODES=("select")
+  USER_SIMULATION_MODES=("select" "respond")
 fi
 
-PROMPT_TYPES=("few-shot" "AT-few-shot" "AT-CoT-few-shot")
-# PROMPT_TYPES=("AT-CoT-few-shot")
+PROMPT_TYPES=("standard" "AT-standard" "CoT" "AT-CoT")
 
 job_counter=0
 
